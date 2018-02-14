@@ -18,23 +18,24 @@ public class Colosseum {
     /**
      * The maximum number of rounds we will let the Pokemon battle.
      */
-    static final int MAX_NUM_ROUNDS = 10;
+    private static final int MAX_NUM_ROUNDS = 10;
 
     /**
      * The first Pokemon we will be fighting.
      */
-    static Pokemon firstPokemon;
+    private static Pokemon firstPokemon;
 
     /**
      * The second Pokemon we will be fighting.
      */
-    static Pokemon secondPokemon;
+    private static Pokemon secondPokemon;
 
     /**
      * Input scanner. Use this to take in user's input for buildPokemon(). <br>
      * Useful functions: next(), nextInt() .
      */
-    static Scanner myScan;
+    private static Scanner myScanner;
+
 
     /**
      * How we will build our Pokemon to battle.
@@ -71,10 +72,24 @@ public class Colosseum {
      *         <p>
      *         Implement this function.
      */
-    public static Pokemon buildPokemon() {
-        Pokemon tempPokemon = new Pokemon();
+    private static Pokemon buildPokemon() {
+        // Tests whether the pokemon has the appropriate amount of hit points.
+        Pokemon pokemon = new Pokemon();
+        int temp = 0;
+        System.out.println("Please name your Pokemon.");
+        System.out.println("How many hit points will it have?");
+        while (pokemon.hitPoints >= 1 && pokemon.hitPoints <= MAX_HIT_POINTS) {
+            else {
+            System.out.println("Sorry. Hit points must be between 1 and 50.");
+        }
+
+        // Solicits input from user on attack level
+        if (pokemon.attackLevel <= 1 && pokemon.attackLevel >= 49 {
+
+        }
         return tempPokemon;
     }
+
 
     /**
      * Prints who is ahead.
